@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>JavaScriptの練習</title>
+</head>
+<body>
+    <h1>console.log</h1>
+<script>
+'use strict';
+// 二次元配列
+var lists = [
+{名前: "山田", 住所: "愛媛", 年齢: "20"},
+{名前: "井上", 住所: "香川", 年齢: "36"},
+{名前: "佐藤", 住所: "高知", 年齢: "42"}
+];
+for (let i = 0; i < lists.length; i ++) {
+Object.keys(lists[i]).forEach(function(key) {
+console.log(key + '=' + lists[i][key]);
+});
+}
+console.log(lists);
+</script>
+</body>
+</html>

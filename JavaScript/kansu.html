@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>JavaScriptの練習</title>
+</head>
+<body>
+    <h1>合計金額 計算</h1>
+    <input type="text1">価格<br>
+    <input type="text2">個数<br>
+    <input type="button" id="myfunc" value="計算する">
+<script>
+'use strict';
+function Goukei(kakaku, kosu = '5') {
+return kakaku * kosu;
+}
+let kakaku =100;
+console.log(Goukei(kakaku));
+
+const myfunc = document.getElementById('myfunc');
+myfunc.addEventListener('click', function() {
+console.log('テスト');
+}, false)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>JavaScriptの練習</title>
+</head>
+<body>
+    <h1>console.log</h1>
+<script>
+'use strict';
+// var list = new Array('トマト', 'にんじん', 'もやし');
+// list.forEach(function(value) {
+// console.log(value);
+// });
+var list = { apple: "りんご", banana: "バナナ", orange: "オレンジ"}
+Object.keys(list).forEach(function(key) {
+console.log(key + '=' + list[key]);
+});
+</script>
+</body>
+</html>

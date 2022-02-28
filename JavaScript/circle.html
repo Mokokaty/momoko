@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>クリックイベント</title>
+    </head>
+    <body>
+        <input type="button" id="myfunc" value="サイコロをふる">
+        <img id='saikoro' src="sai1_fkmhnd.png" >
+        
+        <script>
+            "use strict";
+            document.getElementById("myfunc").addEventListener("click", () => {
+                let saikoro =document.getElementById("saikoro");
+                console.log(saikoro);
+                
+        const images = ['sai2_izaujk.png', 'sai3_wwvtn8.png', 'sai4_h9fhkf.png','sai5_czmrc8.png','sai6_n0mqlo.png'];
+
+        const imageNo = Math.floor( Math.random() * images.length)
+        saikoro.src = images[imageNo];
+            });
+        </script>
+    </body>
+</html>
